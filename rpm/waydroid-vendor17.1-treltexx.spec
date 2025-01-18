@@ -8,7 +8,12 @@ Source0:        %{name}-%{version}.tar.gz
 
 BuildRequires:  systemd
 BuildRequires:  desktop-file-utils
-Requires:       waydroid
+Requires:       dnsmasq
+Requires:       python3-gbinder
+Requires:       python3-gobject
+Requires:       waydroid-sensors
+Requires:       waydroid-gbinder-config-hybris
+Requires:       waydroid-1.2-treltexx
 
 %description
 Waydroid uses Linux namespaces (user, pid, uts, net, mount, ipc) to run a full Android system in a container and provide Android applications on any GNU/Linux-based platform.
